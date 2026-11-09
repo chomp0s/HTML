@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Converter New HTML Conversion Template Form</title>
+    <style>
+       body{
+        font-size: 20px;
+        margin: 24px;
+       }
+       td {
+            padding: 3px 10px 3px 0;
+       }
+       input[type="text"], select, textarea {
+            border: 1px solid #a9a9a9;
+            padding: 1px;
+       }
+    </style>
+</head>
+<body>
+   <h2>Dynamic Converter New HTML Conversion Template Form </h2>
+   <div style="font-size: 20px; margin-top: 22px;">
+    <span style="color: blueviolet;">Administration</span>
+    --&gt;
+    <span style="color: purple;">Dynamic Converter Admin</span>
+    --&gt;
+    Dynamic Converter New HTML Conversion Template Form
+   </div>
+   <hr style="border: 1px solid black; margin-bottom: 15px;">
+
+   <table>
+    <tr>
+      <td style="width: 300px;">*Contet ID</td>
+      <td><input type="text" name="content_id" style="width: 300px;"></td>
+    </tr>
+    <tr>
+      <td style="width: 300px;">*Type</td>
+      <td>
+      <select style="width: 300px;">
+      <option value="ADACTT - Acme Accounting Department">ADACTT - Acme Accounting Department</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 200px;">*Title</td>
+      <td><input type="text" name="title" style="width: 300px;"></td>
+    </tr>
+    <tr>
+       <td style="width: 300px;">*Filter</td>
+       <td>
+         <input type="text" name="filer_name" value="sysadmin" style="width: 140px;">
+         <select name="filer_select" style="width: 150px;">
+            <option>sysadmin</option>
+         </select>
+         </td>
+    </tr>
+    <tr>
+      <td style="width: 300px;">*Security Group</td>
+      <td>
+         <select name="security_group" style="width: 150px;">
+            <option>Public</option>
+         </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><hr style="border: 1px solid #777; margin: 2px;width: 100%;"></td>
+    </tr>
+     <tr>
+      <td style="color: #8B0000;">Template Format</td>
+         <td>
+            <input type="radio" name="format" id="html_fmt"> <label for="html_fmt" style="color: #8B0000;">HTML Conversion Template</label>
+            <input type="radio" name="format" id="classic_fmt"> <label for="classic_fmt" style="color: #8B0000">Classic HTML Conversion Template</label>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><hr style="border: 1px solid #777; margin: 2px;width: 100%;"></td>
+      </tr>
+      <tr>
+         <td><span style="width: 300px;">*Revision</td>
+         <td><input type="text" name="revision" value="1" style="width: 100px;"></td>
+      </tr>
+      <tr>
+          <td>Folder</td>
+            <td>
+            <input type="text" id="folder" style="width: 300px;">
+            <input type="file" value="Browse..." style="background-color: #e0e0e0; border: 1px solid #777;">
+            </td>
+      </tr>
+       <tr>
+         <td>Hidden</td>
+         <td>
+            <select name="hidden" style="width: 50px;">
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+            </select>
+         </td>
+      </tr>
+      <tr>
+         <td>Comments</td>
+         <td><textarea name="comments" rows="4" style="width: 300px; box-sizing; resize: none"></textarea></td>
+      </tr>
+      <tr>
+         <td>User Access List</td>
+         <td><textarea name="user_access" rows="4" style="width: 300px; box-sizing; resize: none"></textarea></td>
+      </tr>
+      <tr>
+         <td>Trash Delete Old Name</td>
+         <td><textarea name="trash_old_name" rows="4" style="width: 300px; box-sizing; resize: none"></textarea></td>
+      </tr>
+      <tr>
+         <td>Trash Delete Location</td>
+         <td>
+            <input type="text" name="trash_location" style="width: 300px;">
+            <input type="file" value="Browse..." style="background-color: #e0e0e0; border: 1px solid #777;">
+         </td>
+      </tr>
+      <tr>
+         <td>Trash Delete Date</td>
+         <td>
+            <input type="date" name="trash_date" style="width: 150px;">
+         </td>
+      </tr>
+      <tr>
+         <td>Trash Deleter</td>
+         <td><input type="text" name="trash_deleter" style="width: 150px;"></td>
+      </tr>
+   </table>
+</body>
+</html>
